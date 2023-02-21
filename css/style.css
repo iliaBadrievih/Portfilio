@@ -1,0 +1,88 @@
+body {
+  font-family: Rockwell Condensed, sans-serif;
+  background: url(https://phonoteka.org/uploads/posts/2021-05/1620856367_4-phonoteka_org-p-fon-detskii-dengi-6.jpg);
+  background-size: cover;
+} 
+
+
+.container {
+  padding: 0 550px;
+  margin-left: 20px;
+}
+
+h1 {
+  font-size: 35px;
+  font-family: Yu Gothic UI Semibold, sans-serif;
+}
+
+h2 {
+  font-size: 30px;
+  margin: 10px 0;
+  padding: 0 30px;
+  font-family: Times New Roman, sans-serif;
+}
+h3 {
+  font-size: 30px;
+  margin: 5px 50;
+  padding: 0 55px;
+  font-family: Rockwell Condensed, sans-serif;
+}
+p {
+  font-size: 30px;
+  margin: 10px 0;
+  padding:0 80px;
+}
+a {
+  font-size: 20px;
+  margin: 10px 0;
+  padding:0 90px;
+}
+button{
+  font-size: 20px;
+  margin: 10px 0;
+  padding:0 90px;
+
+}
+
+  /* Свойства фотографии*/
+.photo {
+  border-radius: 100px;
+  /* Радиус скругления */
+  border: 5px solid transparent;
+  /* Параметры рамки */
+  box-shadow: 0 10px 80px 0px rgba(0, 0, 0, 0.52);
+  object-fit: cover;
+}
+
+  /* Эффект наведения на картинку */
+.photo:hover {
+  border: 3px solid;
+  color: black;
+}
+
+  /* Свойства ссылок */
+a {
+  display: block;
+  text-decoration:Rockwell Condensed;
+  margin-bottom: 20px;
+  position: relative;
+  color: blue;
+}
+
+  /* Что делать при наведении на ссылку */
+a:hover {
+  color:red;
+}
+
+  /* Этим свойством добавляем подчеркивание через создание псевдокласса */
+a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  transform: translateY(1.5em);
+  border-bottom: 1px solid #dadada;
+  width: 300px;
+  color: red;
+}
+
